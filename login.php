@@ -1,5 +1,4 @@
 <?php
-session_start();
 if (isset($_SESSION["username"]) && isset($_SESSION["isAuthenticated"]) == true) {
     header("location:my_account.php");
 }
