@@ -11,13 +11,35 @@
     <title>reset password</title>
 </head>
 
+<style>
+    #resetForm {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 20px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+
+    #resetForm input[type="submit"] {
+        background-color: dodgerblue;
+        padding: 10px;
+        color: white;
+        border: none;
+    }
+    #resetForm input[type="submit"] :hover{
+       background-color: #333;
+        cursor: pointer;
+    }
+</style>
+
 <body>
     <?php include_once "./includes/header.php" ?>
 
     <div class="wrapper">
 
 
-        <form action="" onsubmit="return sendEmail(this)">
+        <form action="" id="resetForm" onsubmit="return sendEmail(this)">
             <label for="email">Enter your email here:</label>
             <input type="email" required name="email" placeholder="example@gmail.com">
 
