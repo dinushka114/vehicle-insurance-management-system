@@ -1,9 +1,9 @@
  <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "ims";
+$servername = "us-cdbr-east-03.cleardb.com";
+$username = "bbb10c4c99d864";
+$password = "c356e2ed";
+$database = "heroku_bee922821906006";
 
 
 // Create connection
