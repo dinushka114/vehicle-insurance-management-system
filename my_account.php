@@ -1,4 +1,5 @@
 <?php
+session_start();
 if (!isset($_SESSION["username"]) || isset($_SESSION["user"]) != "customer") {
     header("location:login.php");
 }
