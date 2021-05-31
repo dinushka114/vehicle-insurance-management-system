@@ -83,8 +83,8 @@ if (isset($_POST["check_email"])) {
 
 
 if (isset($_POST["send_email"])) {
-	$email  = $_POST["email"];
-	$to = "dinushkachandrarathna@gmail.com";
+	$to  = $_POST["email"];
+	$email = "dinushkachandrarathna@gmail.com";
 	$subject = "email worked";
 	$msg = "Hello this is my email";
 

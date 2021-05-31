@@ -80,7 +80,7 @@ if (!isset($_SESSION["username"]) || isset($_SESSION["user"]) != "customer") {
             <p> <?php echo $name; ?> </p>
 
             <ul class="links">
-                <li><a href="../IWT Group Project/my_account.php">my account</a></li>
+                <li><a href="./my_account.php">my account</a></li>
                 <li><a style="cursor: pointer;" onclick="showClaim()">make a claim</a></li>
                 <li><a style="cursor: pointer;" onclick="getAllClaims()">my claims</a></li>
                 <li><a style="cursor: pointer;" onclick="myPayments()">my payments</a></li>
