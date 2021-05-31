@@ -1,7 +1,3 @@
-<?php
-session_start();
-?>
-
 <header>
     <div style="background-color: dodgerblue;padding-top:5px;padding-bottom:5px;">
         <div class="wrapper">
