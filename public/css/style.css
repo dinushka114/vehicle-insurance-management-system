@@ -1,0 +1,1173 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* main wrapper */
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.clearfix {
+  overflow: hidden;
+}
+.upper-header {
+  background-color: #f2f2f2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#brand_name {
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-top: 8px;
+  font-weight: bolder;
+  float: left;
+}
+
+.brand {
+  color: dodgerblue;
+}
+
+/* header .title {
+  text-align: center;
+} */
+
+header .login {
+  padding-right: 0;
+  float: right;
+}
+
+#joinbtn {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 15px;
+  color: dodgerblue;
+  cursor: pointer;
+  margin-top: 6px;
+  font-weight: bolder;
+  border: 3px solid dodgerblue;
+  transition: 0.3s;
+}
+
+#joinbtn:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.navbar {
+  background-color: #333;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar ul {
+  float: left;
+  margin-top: 5px;
+}
+
+.navbar #search_form {
+  float: right;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #f3f3f3;
+  padding: 5px;
+}
+
+.navbar ul li a:hover {
+  color: dodgerblue;
+}
+
+.active {
+  color: dodgerblue !important;
+}
+
+.navbar #site_search {
+  border: none;
+  padding: 5px;
+}
+
+.navbar #srhbtn {
+  border: none;
+  padding: 5px;
+  background-color: dodgerblue;
+  color: #f2f2f2;
+}
+
+.navbar #srhbtn:hover {
+  color: #f2f2f2;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider .prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.slider .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.slider .prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider .text {
+  color: #f2f2f2;
+  font-size: 6vw;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  padding: 8px 12px;
+
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+
+.dotSection .dot_active{
+  background-color: rgb(97, 94, 94);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.quotation .vehicle-type {
+  display: flex;
+}
+
+.quotation {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.quotation input[type="text"] {
+  border: none;
+  border: 1px solid #333;
+  padding: 5px;
+}
+
+.quotation label {
+  font-weight: bold;
+}
+.quotation select {
+  width: 100%;
+  margin-top: 5px;
+  border: 1px solid #333;
+  padding: 5px;
+}
+
+.quotation input[type="submit"] {
+  border: none;
+  padding: 10px;
+}
+
+.quotation #quotBtn:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+
+.quotation .vehicle-type img {
+  margin: 12px;
+}
+
+.quotation .vehicle-type div:hover {
+  background-color: #f2f2f2;
+}
+
+.quotation #quotBtn {
+  color: white;
+  background-color: dodgerblue;
+  transition: 0.3s;
+}
+
+.quotation #buyBtn {
+  background-color: white;
+  color: #333;
+  padding: 7px;
+  border: 3px solid #333;
+  transition: 0.3s;
+}
+
+.quotation #buyBtn:hover {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.quotation #buyBtnDisbled {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+.quotation #buyBtnDisbled:hover {
+  cursor: not-allowed;
+}
+
+.services h1 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.service:hover {
+  display: none;
+}
+
+.services p {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.services a {
+  color: #f2f2f2;
+  text-decoration: none;
+  background-color: dodgerblue;
+  padding: 5px;
+  float: right;
+}
+
+.services .service_1:hover,
+.service_2:hover,
+.service_3:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  background-color: white;
+  color: #333;
+  transition: 0.3s;
+}
+
+.call_us_main {
+  margin-top: 70px;
+  background-color: #333;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.call_us_main h1,
+h3 {
+  color: #f2f2f2;
+}
+
+.call_us_main h1 {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.call_us_main h3 {
+  font-weight: lighter;
+  font-size: 35px;
+  font-style: italic;
+}
+
+.clients h1 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.clients img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.clients p {
+  text-align: center;
+}
+
+.clients h3 {
+  text-align: center;
+  color: black;
+  margin-top: 20px;
+}
+
+.clients {
+  margin-bottom: 40px;
+}
+
+.footer .contact_us .contact p {
+  margin: 5px;
+  font-size: 18px;
+}
+
+.footer {
+  position: relative;
+  clear: both;
+  background-color: #333;
+  padding: 40px;
+  color: #f2f2f2;
+  border-bottom: 3px solid dodgerblue;
+  margin-top: 100px;
+}
+
+.footer .title {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.footer .follow_us,
+.contact_us {
+  display: inline-flex;
+  font-size: 14px;
+}
+
+.footer .logo {
+  margin-right: 10px;
+}
+
+.footer .links ul li {
+  list-style-type: none;
+  margin: 5px;
+}
+
+.footer .links ul li a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.footer .links ul li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer .location {
+  margin-left: 20px;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+/*contact Us Page*/
+
+.about_company {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about_company p {
+  font-size: 17px;
+}
+
+.about_company img {
+  width: 50px;
+}
+
+#contact form label,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#contact form input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  border: 1px solid #333;
+  /* border: none; */
+  padding: 5px;
+}
+
+#reg_user {
+  background-color: #f2f2f2;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#register_user label,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+textarea {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#register_user input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+textarea {
+  border: 1px solid #333;
+  padding: 5px;
+}
+
+#register_user #registerBtn {
+  background-color: dodgerblue;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 14px;
+  transition: 0.3s;
+}
+
+#register_user #registerBtn:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#register_user #loginLink {
+  margin-left: 14px;
+  margin-bottom: 20px;
+}
+
+#register_user select {
+  border: 1px solid #333;
+  padding: 5px;
+  width: 100%;
+}
+
+.req {
+  color: red;
+}
+
+#register_user .p-req .invalid {
+  color: red;
+}
+
+#register_user .p-req .valid {
+  color: green;
+}
+
+#contact form input[type="submit"] {
+  background-color: dodgerblue;
+  border: none;
+  padding: 10px;
+  color: #f2f2f2;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#contact form input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.thanks {
+  text-align: center;
+  margin: 45px;
+}
+
+/* media queries */
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+  header .title,
+  .login {
+    text-align: center;
+  }
+
+  header #joinbtn {
+    margin: 0;
+    width: 100%;
+  }
+
+  header .navbar ul,
+  #search_form {
+    float: none;
+    display: grid;
+    text-align: center;
+  }
+
+  #search_form #srhbtn,
+  #site_search {
+    display: block;
+    width: 100%;
+  }
+
+  header .navbar #search_form {
+    width: 100%;
+    margin: auto;
+  }
+
+  header .navabar #search_form #srhbtn {
+    display: none;
+  }
+
+  header img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 954px) {
+  header .navbar nav,
+  #search_form {
+    display: grid;
+    text-align: center;
+  }
+
+  header .navbar #search_form {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .upper-header .title_box,
+  .login {
+    display: grid;
+    width: 100%;
+  }
+}
+
+/* @media only screen and (max-width: 612px) {
+  .upper-header .title_box #brand_name {
+    font-size: 20px;
+  }
+} */
+
+@media only screen and (max-width: 1015px) {
+  #contact .location {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .call_us_main h1 {
+    font-size: 38px;
+  }
+
+  .upper-header .title_box #brand_name {
+    font-size: 20px;
+  }
+
+  #quoteSection img {
+    padding: 12px;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 876px) {
+  .services img {
+    width: 100%;
+  }
+}
+
+/* my account page */
+
+.account .left-bar {
+  background-color: #f5f5f5;
+}
+
+.account #profileImg {
+  /* text-align: center; */
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.account p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.account .links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.account ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.account .links li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-bottom: 2px solid dodgerblue;
+}
+
+.account .links li a:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.account select {
+  border: 1px solid #333;
+  padding: 5px;
+  width: 100%;
+}
+
+.account label,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+textarea {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.account input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+textarea {
+  border: 1px solid #333;
+  padding: 5px;
+}
+
+.account #updateBtn {
+  background-color: white;
+  border: 3px solid dodgerblue;
+  padding: 10px;
+  color: dodgerblue;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+  /* margin-left: 14px; */
+}
+
+.account #updatingBtn {
+  background-color: white;
+  border: 3px solid dodgerblue;
+  padding: 10px;
+  color: dodgerblue;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+  /* margin-left: 14px; */
+}
+
+.account #updatePassword {
+  background-color: white;
+  border: 3px solid dodgerblue;
+  padding: 10px;
+  color: dodgerblue;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.account #updateBtn:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.account #updatePassword:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.customer_update label {
+  font-weight: bold;
+}
+
+.account 
+.delVehicle {
+  border: none;
+  padding: 5px;
+  color: white;
+}
+
+
+.account .delVehicle {
+  background-color: red;
+  color: white;
+}
+
+
+.account #upVehicle:hover,
+.delVehicle:hover {
+  cursor: pointer;
+}
+
+.account #custable tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+.account #custable td {
+  border-top: 2px solid #333;
+}
+
+.account #custable th {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: left;
+  color: black;
+  font-weight: bold;
+}
+
+.account #custable td,
+#custable th {
+  /* border: 2px solid #333; */
+  padding: 8px;
+}
+
+.account #custable td {
+  /* border: 2px solid #333; */
+  font-size: 14px;
+}
+
+/* new insurance page */
+
+.new_insurance {
+  display: block;
+}
+
+.vehicle_types .v-type:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.vehicle_types .v-type {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  text-align: center;
+  /* transition: 0.3s; */
+}
+
+#select_vehicle_page_btn {
+  /* border: 3px solid dodgerblue; */
+  color: white;
+  border: none;
+  background-color: dodgerblue;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#select_vehicle_page_btn:hover {
+  background-color: #333;
+}
+
+.act {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#insu_details {
+  background-color: #f2f2f2;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#insu_details label {
+  font-weight: bold;
+}
+
+#insu_details input[type="text"] {
+  border: 1px solid #333;
+  padding: 5px;
+}
+
+#insu_details select {
+  border: 1px solid #333;
+  padding: 5px;
+  width: 100%;
+}
+
+#insu_details #showPay,
+#toPay {
+  color: white;
+  border: none;
+  background-color: dodgerblue;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#insu_details #showPay:hover #toPay :hover {
+  background-color: #333;
+  color: white;
+}
+
+/* agent */
+
+/* .agent_acc .left-bar{
+  background-color: #f2f2f2;
+}
+
+.agent_acc .left-bar {
+  background-color: #f5f5f5;
+}
+
+.agent_acc .links a:hover{
+  cursor: pointer;
+}
+
+.agent_acc #profileImg {
+
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.agent_acc p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.agent_acc .links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.agent_acc ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.agent_acc .links li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-bottom: 2px solid dodgerblue;
+}
+
+.agent_acc .links li a:hover {
+  background-color: dodgerblue;
+  color: white;
+} */
+
+/* admin account */
+
+.admin_acc img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.admin_acc #nav li a:hover {
+  cursor: pointer;
+}
+
+.admin_acc #nav {
+  background-color: #333;
+}
+
+.admin_acc #nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.admin_acc #nav li {
+  float: left;
+}
+
+.admin_acc #nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.admin_acc #nav li a:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.admin_acc #custable tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+.admin_acc #custable th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  background-color: dodgerblue;
+  color: white;
+  text-align: center;
+}
+
+.admin_acc #custable td,
+#custable th {
+  /* border: 2px solid #333; */
+  padding: 5px;
+}
+
+.admin_acc #custable td {
+  /* border: 2px solid #333; */
+  font-size: 14px;
+}
+
+.admin_acc #custable .del,
+.up:hover {
+  cursor: pointer;
+}
+
+.admin_acc #custable .up {
+  background-color: #333;
+  border: none;
+  padding: 8px;
+  color: whitesmoke;
+}
+
+.admin_acc #custable .del {
+  background-color: rgb(201, 71, 71);
+  border: none;
+  padding: 8px;
+  color: whitesmoke;
+}
+
+.admin_acc #custable .clselect {
+  border: 1px solid dodgerblue;
+  padding: 5px;
+  background-color: #ddd;
+}
+
+.admin_acc #dashBoard {
+  margin-top: 30px;
+  display: flex;
+}
+
+.admin_acc #dashBoard .card {
+  background-color: #ddd;
+  margin: 5px;
+  width: 50%;
+  /* padding: 10px; */
+  font-size: 0.9rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.admin_acc #dashBoard .card p {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: dodgerblue;
+}
+
+.admin_acc #dashBoard .card h2 {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 15px;
+}
+
+.admin_acc .addVform {
+  background-color: #f2f2f2;
+}
+
+.admin_acc .addVform #createBtn {
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+.admin_acc .addVform #closeForm {
+  background-color: red;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  color: white;
+}
+
+.admin_acc .addVform #closeForm:hover {
+  cursor: pointer;
+}
+
+.admin_acc #addV {
+  background-color: dodgerblue;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+}
+
+.admin_acc #addV:hover {
+  cursor: pointer;
+}
+
+.admin_acc .addVform #createBtn:hover {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.admin_acc .addVform label {
+  font-weight: bold;
+}
+
+.admin_acc .addVform label,
+input[type="text"],
+select {
+  width: 100%;
+}
+
+.admin_acc .addVform input[type="text"],
+select {
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.payment {
+  max-width: 500px;
+  min-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.payment label {
+  font-weight: bold;
+}
+
+.payment input[type="text"] {
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.payment input[type="button"] {
+  background-color: #333;
+  color: white;
+  padding: 8px;
+  border: none;
+}
+
+.payment input[type="button"]:hover {
+  cursor: pointer;
+  background-color: dodgerblue;
+}
+
+.payment #pay {
+  background-color: dodgerblue;
+  padding: 14px;
+  color: white;
+}
+
+#methods {
+  padding-top: 20px;
+}
+
+#methods img {
+  margin-right: 20px;
+}
